@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./script.js"></script>
+</head>
+
+<body class="body">
+    <div class="page">
+
+        <h1 class="titile"> Создание списка дел </h1>
+
+        <input id="taskInput" type="text" placeholder="Введите дело..." required>
+        <button id="addTaskBtn" class="btn" type="submit">Добавить дело</button>
+        <ul id="taskList"></ul>
+
+        <template id="taskTemplate">
+            <li class="listElement">
+                <span class="taskText"></span>
+                <button class="deleteTaskBtn btn" onclick="">Удалить</button>
+            </li>
+        </template>
+
+        <h1 class="titile"> Карточки продуктов в интернет-магазине </h1>
+
+        <div id="productContainer"></div>
+
+        <template id="productTemplate">
+            <div class="productCard">
+                <img class="productImage" src="" alt="Product Image">
+                <h3 class="productName"></h3>
+                <p class="productPrice"></p>
+                <p class="productDescription"></p>
+            </div>
+        </template>
+
+        <h1 class="titile"> Форма регистрации с динамическим добавлением полей </h1>
+
+        <form id="registrationForm">
+            <button id="addFieldBtn" class="input-size btn-style" type="button">Добавить еще поле +</button>
+            <button id="regButton" class="input-size" type="submit">Зарегестрироваться</button>
+        </form>
+
+        <template id="inputTemplate">
+            <input id="inputField" class="input-size" type="text" placeholder="Дополнительная информация">
+        </template>
+
+        <h1 class="titile"> Галерея изображений с модальным окном </h1>
+
+        <div id="gallery"></div>
+
+        <template id="imageTemplate">
+            <img class="galleryImage" src="" alt="Gallery Image">
+        </template>
+
+        <div id="modal" style="display:none;">
+            <img id="modalImage" onclick="" src="" alt="Modal Image">
+        </div>
+
+        <h1 class="titile"> Система комментариев для блога </h1>
+
+        <div class="post">
+            <h3>Пост про игры</h3>
+            <p>Компьютерные игры способствуют развитию когнитивных навыков, 
+                включая логическое мышление, реакцию, пространственное восприятие 
+                и улучшение памяти. Некоторые игры требуют стратегического планирования, 
+                принятия решений в условиях ограниченного времени и быстрого анализа ситуации.
+
+            </p>
+        </div>
+
+        <div id="comments"></div>
+        <input id="commentInput" class="style-size" type="text"  
+        placeholder="Напишите комментарий..." maxlength="250">
+        <button id="submitComment" class="style-size">Отправить</button>
+
+        <template id="commentTemplate">
+            <div class="comment">
+                <p class="commentText"></p>
+            </div>
+        </template>
+    </div>
+</body>
+
+</html>
